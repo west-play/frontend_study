@@ -1,38 +1,143 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title>CSS3 Selector Basic Page</title>
     <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        /**/
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
         /* id 속성으로 header를 가지고 있는 태그의 스타일을 지정합니다. */
         #header {
-            width: 800px; margin: 0 auto;
+            width: 800px;
+            margin: 0 auto;
             background: red;
         }
-        
+
         /* id 속성으로 wrap을 가지고 있는 태그의 스타일을 지정합니다. */
         #wrap {
-            width: 800px; margin: 0 auto;
-            overflow: hidden;
+            width: 800px;
+            margin: 0 auto;
+            /* overflow: hidden; */
+            border: solid 2px #7000ff;
+            float: left;
         }
-        
+
         /* id 속성으로 aside를 가지고 있는 태그의 스타일을 지정합니다. */
         #aside {
-            width: 200px; float: left;
+            width: 200px;
+            /* height: 300px; */
+            /* float: left; */
             background: blue;
+            text-align: center;
+            /* border: solid 2px #242424; */
         }
-        
+
         /* id 속성으로 content를 가지고 있는 태그의 스타일을 지정합니다. */
         #content {
-            width: 600px; float: left;
+            width: 200px;
+            /* height: 200px; */
+            float: right;
             background: green;
+            text-align: center;
+            /* border: solid 2px #242424; */
         }
     </style>
 </head>
+
 <body>
     <div id="header">
         <h1>Header</h1>
     </div>
-    <div id="wrap">
+    <div id="wrap" class="clearfix">
         <div id="aside">
             <h1>Aside</h1>
         </div>
@@ -41,4 +146,5 @@
         </div>
     </div>
 </body>
+
 </html>
